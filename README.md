@@ -25,9 +25,10 @@ Essa API fornece funcionalidades básicas para gerenciar usários que usam o APP
   
   ```json
   {
-    "nameUser": "Nome do Usuário",
-    "emailUser": "email@cotco.com",
-    "passwordUser": "senha123"
+    "nomeUsuario": "Nome do Usuário",
+    "sobrenomeUsuario": "Sobrenome do Usuário",
+    "emailUsuario": "email@cotco.com",
+    "senhaUsuario": "senha123"
   }
  
 ---
@@ -48,7 +49,6 @@ Essa API fornece funcionalidades básicas para gerenciar usários que usam o APP
   
   ```json
   {
-    "nameUser": "Novo Nome",
     "emailUser": "novo_email@cotco.com"
   }
 
@@ -69,9 +69,10 @@ Essa API fornece funcionalidades básicas para gerenciar usários que usam o APP
   
   ```json
   {
-    "idUser": 1,
-    "nameUser": "Nome do Usuário",
-    "emailUser": "email@cotco.com"
+    "idUsuario": 1,
+    "nomeUsuario": "Nome do Usuário",
+    "sobrenomeUsuario": "Sobrenome do usuario",
+    "emailUsuario": "email@cotco.com"
   }
   
 ---
