@@ -29,6 +29,7 @@ Essa API fornece funcionalidades básicas para gerenciar usários que usam o APP
     "sobrenomeUsuario": "Sobrenome do Usuário",
     "emailUsuario": "email@cotco.com",
     "senhaUsuario": "senha123"
+    "empresaUsuario": "Empresa usuário"
   }
  
 ---
@@ -72,7 +73,8 @@ Essa API fornece funcionalidades básicas para gerenciar usários que usam o APP
     "idUsuario": 1,
     "nomeUsuario": "Nome do Usuário",
     "sobrenomeUsuario": "Sobrenome do usuario",
-    "emailUsuario": "email@cotco.com"
+    "emailUsuario": "email@cotco.com",
+    "empresaUsuario": "Empresa usuário"
   }
   
 ---
