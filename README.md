@@ -1,6 +1,7 @@
 # SPRINT 1 | COT&CO | 2TDSPT
 Entrega da sprint 2 | Digital Business Enablement
-- *Nessa entrega o sistema está preparado para fazer um CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.*
+> [!NOTE]
+> Nessa entrega o sistema está preparado para fazer um CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.
 
 
 ## DOCUMENTAÇÃO DA API
@@ -8,11 +9,17 @@ Entrega da sprint 2 | Digital Business Enablement
 Documentação da API -
 Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o APP COT&CO.
 
+> [!IMPORTANT]
+> A coluna 'situacaoEmpresa' se refere ao status da empresa no sistema <br/>
+> **0 = ATIVA** <BR/>
+> **1 = INATIVA**
 
+---
 
 ### :heavy_plus_sign: CREATE USER
-- **Apenas os campos abaixo NÃO serão obrigatórios e podem estar vazios:** <BR/>
-complemento (endereco)<BR/>
+>[!IMPORTANT]
+> **Apenas os campos abaixo NÃO serão obrigatórios e podem estar vazios:** <BR/>
+> 'complemento' (endereco) <BR/>
 
 - **URL:** /cotco/empresas
 - **Método:** POST
@@ -30,7 +37,7 @@ complemento (endereco)<BR/>
       "cnpjEmpresa": "11.111.111.0001/01",
       "telEmpresa": "(11)91111-1111",
       "emailEmpresa": "comercial@companytech.com",
-      "situacaoEmpresa": "1",
+      "situacaoEmpresa": "0",
       "enderecoEmpresa" : {
           "logradouro": "Av Paulista",
           "bairro": "Bela Vista",
@@ -45,11 +52,12 @@ complemento (endereco)<BR/>
 ---
 
 ### :repeat: UPDATE USER
-- **Poderão ser atualizados apenas os campos:** <BR/>
-NmFantEmpresa, <BR/>
-TelEmpresa,<BR/>
-EmailEmpresa, <BR/>
-Endereco
+> [!IMPORTANT]
+> **Poderão ser atualizados apenas os campos:** <BR/>
+> NmFantEmpresa, <BR/>
+> TelEmpresa,<BR/>
+> EmailEmpresa, <BR/>
+> Endereco
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Método:** PUT
@@ -57,9 +65,9 @@ Endereco
 - **Parâmetros da URL:**
   - {idEmpresa} - ID da empresa a ter dados atualizados.
 - **Códigos de Status:**
-  - :white_check_mark: 200 (OK) - Empresa atualizado com sucesso.
+  - :white_check_mark: 200 (OK) - Empresa atualizada com sucesso.
   - :warning: 400 (Bad Request) - Dados de entrada inválidos.
-  - :x: 404 (Not Found) - Usuário não encontrado.
+  - :x: 404 (Not Found) - Empresa não encontrada.
 - **Corpo da Solicitação (JSON):**
 
   
@@ -75,7 +83,7 @@ Endereco
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Método:** GET
-- **Descrição:** Retorna os detalhes de um usuário específico.
+- **Descrição:** Retorna os detalhes de uma empresa específica.
 - **Parâmetros da URL:**
   - {idEmpresa} - ID da empresa a ser visualizado.
 - **Códigos de Status:**
@@ -86,24 +94,36 @@ Endereco
   
   ```json
   {
-    "idUsuario": 1,
-    "nomeUsuario": "Nome do Usuário",
-    "sobrenomeUsuario": "Sobrenome do usuario",
-    "emailUsuario": "email@cotco.com",
-    "empresaUsuario": "Empresa usuário"
+    "idEmpresa": 1,
+    "rzSocialEmpresa": "Company filial LTDA",
+    "nmFantEmpresa": "Company Technologies",
+    "cnpjEmpresa": "11.111.111.0001/01",
+    "telEmpresa": "(11)91111-1111",
+    "emailEmpresa": "comercial@companytech.com",
+    "situacaoEmpresa": "0",
+    "enderecoEmpresa" : {
+        "logradouro": "Av Paulista",
+        "bairro": "Bela Vista",
+        "cep": "12345-123",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "complemento":"",
+        "numero": "1000"
+    }
   }
   
 ---
 
 ### :wastebasket: DELETE USER
 
-#- Ao chamar esse método a empresa não deverá ser excluída, apenas ter o status alterado para INATIVA.
+> [!WARNING]
+> **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.**
 
 - **URL:** /cotco/users/{id}
 - **Method:** DELETE
 - **Description:** Tornar uma empresa existente INATIVA
 - **URL Parameters:**
-  - {idEmpresa} - ID da empresa a ser excluída.
+  - {idEmpresa} - ID da empresa a tornar INATIVA.
 - **Status Codes:**
   - :white_check_mark: 204 (No Content) - Empresa tornou-se INATIVA com sucesso.
-  - :x: 404 (Not Found) - Usuário não encontrado.
+  - :x: 404 (Not Found) - Empresa não encontrada.
