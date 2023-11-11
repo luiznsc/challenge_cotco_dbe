@@ -51,7 +51,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
  
 ---
 
-### :repeat: UPDATE USER
+### :repeat: UPDATE COMPANY
 > [!IMPORTANT]
 > **Poderão ser atualizados apenas os campos:** <BR/>
 > NmFantEmpresa, <BR/>
@@ -81,11 +81,11 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
 ### :page_with_curl: VIEW USER
 
-- **URL:** /cotco/empresas/{idEmpresa}
+- **URL:** /cotco/empresas
 - **Método:** GET
-- **Descrição:** Retorna os detalhes de uma empresa específica.
+- **Descrição:** Retorna os detalhes das empresas
 - **Parâmetros da URL:**
-  - {idEmpresa} - ID da empresa a ser visualizado.
+  - {idEmpresa} - ID da empresa a ser visualizado, se desejar ver uma específica.
 - **Códigos de Status:**
   - :white_check_mark: 200 (OK) - Detalhes da empresa retornados com sucesso.
   - :x: 404 (Not Found) - Empresa não encontrada.
@@ -114,7 +114,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
   
 ---
 
-### :wastebasket: DELETE USER
+### :wastebasket: DELETE COMPANY
 
 > [!WARNING]
 > **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.**
