@@ -119,7 +119,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 > [!WARNING]
 > **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.**
 
-- **URL:** /cotco/users/{id}
+- **URL:** /cotco/empresas/{idEmpresa}
 - **Method:** DELETE
 - **Description:** Tornar uma empresa existente INATIVA
 - **URL Parameters:**
