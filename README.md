@@ -32,7 +32,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
       "cnpjEmpresa": "11.111.111.0001/01",
       "telEmpresa": "(11)91111-1111",
       "emailEmpresa": "comercial@companytech.com",
-      "situacaoEmpresa": "0",
+      "situacaoEmpresa": "true",
       "enderecoEmpresa" : {
           "logradouro": "Av Paulista",
           "bairro": "Bela Vista",
@@ -78,12 +78,12 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
 - **URL:** /cotco/empresas
 - **Método:** GET
-- **Descrição:** Retorna os detalhes das empresas
+- **Descrição:** Retorna os detalhes de todas empresas ativas no sistema
 - **Parâmetros da URL:**
-  - {idEmpresa} - ID da empresa a ser visualizado, se desejar ver uma específica.
+  - {idEmpresa} - ID da empresa ativa a ser visualizaoa, se desejar ver uma específica.
 - **Códigos de Status:**
-  - :white_check_mark: 200 (OK) - Detalhes da empresa retornados com sucesso.
-  - :x: 404 (Not Found) - Empresa não encontrada.
+  - :white_check_mark: 200 (OK) - Detalhes das empresas retornados com sucesso.
+  - :x: 404 (Not Found) - Empresa(as) não encontrada.
 - **Corpo da Resposta (JSON):**
 
   
@@ -95,7 +95,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
     "cnpjEmpresa": "11.111.111.0001/01",
     "telEmpresa": "(11)91111-1111",
     "emailEmpresa": "comercial@companytech.com",
-    "situacaoEmpresa": "0",
+    "situacaoEmpresa": "true",
     "enderecoEmpresa" : {
         "logradouro": "Av Paulista",
         "bairro": "Bela Vista",
@@ -122,7 +122,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Method:** DELETE
-- **Description:** Tornar uma empresa existente INATIVA
+- **Description:** Tornar uma empresa existente como INATIVA
 - **URL Parameters:**
   - {idEmpresa} - ID da empresa a tornar INATIVA.
 - **Status Codes:**
