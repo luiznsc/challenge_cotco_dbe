@@ -53,7 +53,7 @@ Endereco
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Método:** PUT
-- **Descrição:** Atualiza os dados de um usuário existente.
+- **Descrição:** Atualiza os dados de uma empresa existente.
 - **Parâmetros da URL:**
   - {idEmpresa} - ID da empresa a ter dados atualizados.
 - **Códigos de Status:**
