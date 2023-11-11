@@ -9,14 +9,9 @@ Entrega da sprint 2 | Digital Business Enablement
 Documentação da API -
 Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o APP COT&CO.
 
-> [!IMPORTANT]
-> A coluna 'situacaoEmpresa' se refere ao status da empresa no sistema <br/>
-> **0 = ATIVA** <BR/>
-> **1 = INATIVA**
-
 ---
 
-### :heavy_plus_sign: CREATE USER
+### :heavy_plus_sign: CREATE COMPANY
 >[!IMPORTANT]
 > **Apenas os campos abaixo NÃO serão obrigatórios e podem estar vazios:** <BR/>
 > 'complemento' (endereco) <BR/>
@@ -117,7 +112,13 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 ### :wastebasket: DELETE COMPANY
 
 > [!WARNING]
-> **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.**
+> **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.** <BR/>
+> **setando sua situacaoEmpresa para FALSE.**
+
+> [!IMPORTANT]
+> A coluna 'situacaoEmpresa' no banco aceitará 0 ou 1 <br/>
+> **0 = ATIVA** <BR/>
+> **1 = INATIVA**
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Method:** DELETE
