@@ -1,4 +1,4 @@
-# SPRINT 1 | COT&CO | 2TDSPT
+# SPRINT 2 | COT&CO | 2TDSPT
 Entrega da sprint 2 | Digital Business Enablement
 > [!NOTE]
 > Nessa entrega o sistema está preparado para fazer um CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.
