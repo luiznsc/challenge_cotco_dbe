@@ -113,12 +113,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
 > [!WARNING]
 > **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.** <BR/>
-> **setando sua situacaoEmpresa para FALSE.**
-
-> [!IMPORTANT]
-> A coluna 'situacaoEmpresa' no banco aceitará 0 ou 1 <br/>
-> **0 = ATIVA** <BR/>
-> **1 = INATIVA**
+> **setando sua situacaoEmpresa para "inativa".**
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Method:** DELETE
