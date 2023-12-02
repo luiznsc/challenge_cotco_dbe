@@ -32,7 +32,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
       "cnpjEmpresa": "11.111.111.0001/01",
       "telEmpresa": "(11)91111-1111",
       "emailEmpresa": "comercial@companytech.com",
-      "situacaoEmpresa": "true",
+      "situacaoEmpresa": "ATIVA",
       "enderecoEmpresa" : {
           "logradouro": "Av Paulista",
           "bairro": "Bela Vista",
@@ -95,7 +95,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
     "cnpjEmpresa": "11.111.111.0001/01",
     "telEmpresa": "(11)91111-1111",
     "emailEmpresa": "comercial@companytech.com",
-    "situacaoEmpresa": "true",
+    "situacaoEmpresa": "ATIVA",
     "enderecoEmpresa" : {
         "logradouro": "Av Paulista",
         "bairro": "Bela Vista",
@@ -117,7 +117,7 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
 - **URL:** /cotco/empresas/{idEmpresa}
 - **Method:** DELETE
-- **Description:** Tornar uma empresa existente como INATIVA
+- **Description:** Tornar uma empresa existente como "INATIVA"
 - **URL Parameters:**
   - {idEmpresa} - ID da empresa a tornar INATIVA.
 - **Status Codes:**
