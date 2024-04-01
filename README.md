@@ -101,3 +101,13 @@ Documentação da API -
 - **Status Codes:**
   - :white_check_mark: 204 (No Content) - Empresa tornou-se INATIVA com sucesso.
   - :x: 404 (Not Found) - Empresa não encontrada.
+  - 
+
+
+  ---
+
+### ANÁLISE DE DADOS E RETORNO DE VALORES:
+> [!IMPORTANT]
+> **Deverá ter o arquivo "cotcoAI.py" em sua máquina.** <BR/>
+> **Altere o diretório na linha 46 do objeto FileUploadController.java** <BR/>
+> **O teste da funcionalidade deve ser feito via postman ou outra ferramenta de teste de api de sua preferência, segue imagem abaixo:** <BR/>
