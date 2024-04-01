@@ -14,10 +14,8 @@ Documentação da API -
 
 ### :heavy_plus_sign: CREATE COMPANY
 >[!IMPORTANT]
-> **Apenas os campos abaixo NÃO serão obrigatórios e podem estar vazios:** <BR/>
-> 'complemento' (endereco) <BR/>
 
-- **URL:** /cotco/empresas
+- **URL:** /cotco/empresas/cadastrar
 - **Método:** POST
 - **Descrição:** Cria uma nova empresa.
 - **Códigos de Status:**
@@ -40,12 +38,12 @@ Documentação da API -
 ### :repeat: UPDATE COMPANY
 > [!IMPORTANT]
 > **Poderão ser atualizados apenas os campos:** <BR/>
+> respEmpresa, <BR/>
 > NmFantEmpresa, <BR/>
-> TelEmpresa,<BR/>
-> EmailEmpresa, <BR/>
-> Endereco
+> telEmpresa,<BR/>
+> emailEmpresa, <BR/>
 
-- **URL:** /cotco/empresas/{idEmpresa}
+- **URL:** /cotco/empresas/atualizar/{idEmpresa}
 - **Método:** PUT
 - **Descrição:** Atualiza os dados de uma empresa existente.
 - **Parâmetros da URL:**
@@ -95,7 +93,7 @@ Documentação da API -
 > **Ao chamar esse método a empresa NÃO DEVERÁ ser excluída, apenas ter o status alterado para INATIVA.** <BR/>
 > **setando sua situacaoEmpresa para "inativa".**
 
-- **URL:** /cotco/empresas/{idEmpresa}
+- **URL:** /cotco/excluir/{idEmpresa}
 - **Method:** DELETE
 - **Description:** Tornar uma empresa existente como "INATIVA"
 - **URL Parameters:**
