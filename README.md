@@ -111,3 +111,4 @@ Documentação da API -
 > **Deverá ter o arquivo "cotcoAI.py" em sua máquina.** <BR/>
 > **Altere o diretório na linha 46 do objeto FileUploadController.java** <BR/>
 > **O teste da funcionalidade deve ser feito via postman ou outra ferramenta de teste de api de sua preferência, segue imagem abaixo:** <BR/>
+![exemplo teste analise de dados](https://github.com/luiznsc/challenge_cotco_dbe/blob/main/postman_ai.png)
