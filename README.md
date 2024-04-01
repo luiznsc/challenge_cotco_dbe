@@ -1,14 +1,15 @@
 # SPRINT 2 | COT&CO | 2TDSPT
 Entrega da sprint 2 | Digital Business Enablement
 > [!NOTE]
-> Nessa entrega o sistema está preparado para fazer um CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.
+> CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.
+> Análise de dados de um csv, responde ao método post trazendo o produto mais custo benefício considerando o nome inserido.
 
 
 ## DOCUMENTAÇÃO DA API
 
 Documentação da API -
-Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o APP COT&CO.
-
+> Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o APP COT&CO. - Método Empresa Controller
+> Análise de dados de um csv, responde ao método post trazendo o produto mais custo benefício considerando o nome inserido. - Método FileUploadController
 ---
 
 ### :heavy_plus_sign: CREATE COMPANY
@@ -27,21 +28,11 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
   
   ```json
     {
-      "rzSocialEmpresa": "Company filial LTDA",
-      "nmFantEmpresa": "Company Technologies",
-      "cnpjEmpresa": "11.111.111.0001/01",
-      "telEmpresa": "(11)91111-1111",
-      "emailEmpresa": "comercial@companytech.com",
-      "situacaoEmpresa": "ATIVA",
-      "enderecoEmpresa" : {
-          "logradouro": "Av Paulista",
-          "bairro": "Bela Vista",
-          "cep": "12345-123",
-          "cidade": "São Paulo",
-          "uf": "SP",
-          "complemento":"",
-          "numero": "1000"
-      }
+      "respEmpresa": "teste 2",
+      "nmFantEmpresa": "Nome Fantasia da Empresa",
+      "cnpjEmpresa": "22.111.1111/11",
+      "telEmpresa": "(22)1111-1111",
+      "emailEmpresa": "2teste2@gmail.com"
     }
  
 ---
@@ -67,10 +58,11 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
   
   ```json
-  {
-      "idEmpresa" : "1",
-      "emailEmpresa": "comercialnovo@companytech.com"
-  }
+    {
+        "respEmpresa": "responsavel empresa",
+        "nmFantEmpresa": "Nome Fantasia da Empresa",
+        "emailEmpresa": "2teste2@gmail.com"
+    }
 
 ---
 
@@ -88,24 +80,12 @@ Essa API fornece funcionalidades básicas para gerenciar empresas que utilizam o
 
   
   ```json
-  {
-    "idEmpresa": 1,
-    "rzSocialEmpresa": "Company filial LTDA",
-    "nmFantEmpresa": "Company Technologies",
-    "cnpjEmpresa": "11.111.111.0001/01",
-    "telEmpresa": "(11)91111-1111",
-    "emailEmpresa": "comercial@companytech.com",
-    "situacaoEmpresa": "ATIVA",
-    "enderecoEmpresa" : {
-        "logradouro": "Av Paulista",
-        "bairro": "Bela Vista",
-        "cep": "12345-123",
-        "cidade": "São Paulo",
-        "uf": "SP",
-        "complemento":"",
-        "numero": "1000"
+    {
+        "idEmpresa"
+        "respEmpresa": "responsavel empresa",
+        "nmFantEmpresa": "Nome Fantasia da Empresa",
+        "cnpjEmpresa": "22.111.1111/11",
     }
-  }
   
 ---
 
