@@ -1,5 +1,5 @@
-# SPRINT 2 | COT&CO | 2TDSPT
-Entrega da sprint 2 | Digital Business Enablement
+# SPRINT 3 | COT&CO | 2TDSPT
+Entrega da sprint 3 | Digital Business Enablement
 > [!NOTE]
 > CRUD (Create, Read, Update e Delete) de uma empresa. A empresa é o nosso cliente direto, pois nossa solução é B2B.
 > Análise de dados de um csv, responde ao método post trazendo o produto mais custo benefício considerando o nome inserido.
